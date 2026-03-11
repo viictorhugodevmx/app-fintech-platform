@@ -1,0 +1,19 @@
+.navbar {
+  height: 60px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.user {
+  opacity: 0.8;
+}
