@@ -1,0 +1,131 @@
+.market-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #f8fafc;
+}
+
+.page-header p {
+  color: #94a3b8;
+  max-width: 700px;
+}
+
+.refresh-btn {
+  border: 1px solid #334155;
+  background: #111827;
+  color: #e2e8f0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background: #1e293b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.stat-card strong {
+  font-size: 24px;
+  color: #f8fafc;
+}
+
+.stat-card small {
+  color: #94a3b8;
+}
+
+.market-panel {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.panel-header h2 {
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.panel-header span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.market-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr 1fr;
+  gap: 12px;
+  padding: 14px 20px;
+  align-items: center;
+}
+
+.table-head {
+  background: #0f172a;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-row {
+  border-top: 1px solid #1e293b;
+  color: #e2e8f0;
+}
+
+.table-row:hover {
+  background: #0b1220;
+}
+
+.positive {
+  color: #22c55e;
+}
+
+.negative {
+  color: #ef4444;
+}

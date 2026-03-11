@@ -1,0 +1,100 @@
+.trading-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.page-header p {
+  color: #94a3b8;
+}
+
+.trading-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.price-panel {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-panel strong {
+  font-size: 28px;
+}
+
+.label {
+  color: #94a3b8;
+}
+
+.trade-panel {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.trade-panel h2 {
+  margin-bottom: 10px;
+}
+
+.trade-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.trade-panel input {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px;
+  color: #e2e8f0;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  background: #15803d;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.sell-btn {
+  margin-top: 10px;
+  background: #b91c1c;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.buy-btn:hover {
+  background: #166534;
+}
+
+.sell-btn:hover {
+  background: #991b1b;
+}
+
+.positive {
+  color: #22c55e;
+}
