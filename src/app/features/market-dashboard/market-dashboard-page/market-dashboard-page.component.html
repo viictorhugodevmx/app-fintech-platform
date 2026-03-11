@@ -11,30 +11,34 @@
   </div>
 
   <div class="stats-grid">
-    <div class="stat-card">
-      <span class="stat-label">BTC Price</span>
-      <strong>$ 67,420</strong>
-      <small class="positive">+2.14%</small>
-    </div>
 
-    <div class="stat-card">
-      <span class="stat-label">ETH Price</span>
-      <strong>$ 3,480</strong>
-      <small class="positive">+1.22%</small>
-    </div>
+    <app-stat-card
+      label="BTC Price"
+      [value]="'$ ' + market.price()"
+      hint="Live price"
+    />
 
-    <div class="stat-card">
-      <span class="stat-label">24h Volume</span>
-      <strong>$ 128.4B</strong>
-      <small>Global market activity</small>
-    </div>
+    <app-stat-card
+      label="ETH Price"
+      value="$ 3,480"
+      hint="+1.22%"
+    />
 
-    <div class="stat-card">
-      <span class="stat-label">Market Sentiment</span>
-      <strong>Bullish</strong>
-      <small class="positive">Risk appetite rising</small>
-    </div>
+    <app-stat-card
+      label="24h Volume"
+      value="$128B"
+      hint="Market activity"
+    />
+
+    <app-stat-card
+      label="Market Sentiment"
+      value="Bullish"
+      hint="Strong buying pressure"
+    />
+
+    <app-market-chart />
   </div>
+
 
   <div class="market-panel">
     <div class="panel-header">

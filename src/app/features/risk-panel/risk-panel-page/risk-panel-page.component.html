@@ -1,2 +1,59 @@
-<h1>Risk Panel</h1>
-<p>Exposure and leverage</p>
+<section class="risk-page">
+
+  <div class="page-header">
+    <h1>Risk Panel</h1>
+    <p>Monitor exposure, leverage and liquidation risk.</p>
+  </div>
+
+  <div class="risk-grid">
+
+    <div class="risk-card">
+      <span>Portfolio Exposure</span>
+      <strong>$ {{ exposure() }}</strong>
+      <small>Capital currently in market</small>
+    </div>
+
+    <div class="risk-card">
+      <span>Leverage</span>
+      <strong>{{ leverage() }}x</strong>
+      <small class="positive">Healthy level</small>
+    </div>
+
+    <div class="risk-card">
+      <span>Risk Score</span>
+      <strong>Low</strong>
+      <small class="positive">Portfolio stable</small>
+    </div>
+
+    <div class="risk-card">
+      <span>Liquidation Level</span>
+      <strong>$ 52,300</strong>
+      <small>Critical price threshold</small>
+    </div>
+
+  </div>
+
+  <div class="risk-panel">
+
+    <div class="panel-header">
+      Portfolio Risk Breakdown
+    </div>
+
+    <div class="risk-row">
+      <span>BTC Exposure</span>
+      <span>65%</span>
+    </div>
+
+    <div class="risk-row">
+      <span>ETH Exposure</span>
+      <span>25%</span>
+    </div>
+
+    <div class="risk-row">
+      <span>Altcoins Exposure</span>
+      <span>10%</span>
+    </div>
+
+  </div>
+
+</section>

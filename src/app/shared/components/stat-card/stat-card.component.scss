@@ -1,0 +1,23 @@
+.stat-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+strong {
+  font-size: 22px;
+}
+
+small {
+  color: #94a3b8;
+}

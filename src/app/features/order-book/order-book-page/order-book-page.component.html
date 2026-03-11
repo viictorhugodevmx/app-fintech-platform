@@ -58,28 +58,10 @@
         <span>Total</span>
       </div>
 
-      <div class="order-row buy">
-        <span>$67,420</span>
-        <span>0.60</span>
-        <span>$40,452</span>
-      </div>
-
-      <div class="order-row buy">
-        <span>$67,410</span>
-        <span>1.10</span>
-        <span>$74,151</span>
-      </div>
-
-      <div class="order-row buy">
-        <span>$67,400</span>
-        <span>0.90</span>
-        <span>$60,660</span>
-      </div>
-
-      <div class="order-row buy">
-        <span>$67,390</span>
-        <span>0.50</span>
-        <span>$33,695</span>
+      <div class="order-row buy" *ngFor="let o of trading.orders()">
+        <span>$ {{ o.price }}</span>
+        <span>{{ o.amount }}</span>
+        <span>$ {{ o.price * o.amount }}</span>
       </div>
 
     </div>
